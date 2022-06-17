@@ -164,7 +164,7 @@ struct Config {
     // of completion candidates. This behaviour can be disabled by specifying
     // false for the option. This option is the most useful for LSP clients
     // that implement their own filtering and sorting logic.
-    bool filterAndSort = true;
+    bool filterAndSort = false;
 
     struct Include {
       // Regex patterns to match include completion candidates against. They
@@ -286,7 +286,7 @@ struct Config {
     bool parametersInDeclarations = true;
 
     // Number of indexer threads. If 0, 80% of cores are used.
-    int threads = 1;
+    int threads = 2;
 
     // Whether to reparse a file if write times of its dependencies have
     // changed. The file will always be reparsed if its own write time changes.
