@@ -189,7 +189,7 @@ struct Config {
     } include;
 
     // Maxmum number of results.
-    int maxNum = 1;
+    int maxNum = 30;
 
     // Add placeholder text. Effective only if client.snippetSupport is true.
     //
