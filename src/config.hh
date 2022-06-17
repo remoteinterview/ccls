@@ -286,7 +286,7 @@ struct Config {
     bool parametersInDeclarations = true;
 
     // Number of indexer threads. If 0, 80% of cores are used.
-    int threads = 0;
+    int threads = 1;
 
     // Whether to reparse a file if write times of its dependencies have
     // changed. The file will always be reparsed if its own write time changes.
