@@ -164,7 +164,7 @@ struct Config {
     // of completion candidates. This behaviour can be disabled by specifying
     // false for the option. This option is the most useful for LSP clients
     // that implement their own filtering and sorting logic.
-    bool filterAndSort = true;
+    bool filterAndSort = false;
 
     struct Include {
       // Regex patterns to match include completion candidates against. They
@@ -189,7 +189,7 @@ struct Config {
     } include;
 
     // Maxmum number of results.
-    int maxNum = 100;
+    int maxNum = 500;
 
     // Add placeholder text. Effective only if client.snippetSupport is true.
     //
