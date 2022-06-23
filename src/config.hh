@@ -164,7 +164,7 @@ struct Config {
     // of completion candidates. This behaviour can be disabled by specifying
     // false for the option. This option is the most useful for LSP clients
     // that implement their own filtering and sorting logic.
-    bool filterAndSort = true;
+    bool filterAndSort = false;
 
     struct Include {
       // Regex patterns to match include completion candidates against. They
